@@ -20,5 +20,6 @@ We modified the values in the activity dataset (y), by replacing the ids with th
 Of the features, we extracted the ones that relate to mean and standard deviation. The complete list of features that we extracted can be found in [features_mean_sd.txt](./features_mean_sd.txt).
 
 These measurements from the initial dataset were grouped by activity and subject, and then summarized by their mean. So the variable names in the final output represent the mean of each measuremnt, aggreated by activity and subject. 
+
 =========
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
