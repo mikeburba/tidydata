@@ -38,6 +38,9 @@ run_analysis <- function() {
   # for each measurement. 
   # I used grepl to find all features that have mean() or std() in them
   features_mean_sd <- features %>% filter(grepl("mean()|std()",feature))
+  # Write the table of the feautres selected for documentation
+  write.table(features_mean_sd, "features_mean_sd.txt", row.name=F)
+  
   # Do a simple subset to trim all variables that are not mean / sd features
   X <- X[,features_mean_sd$idx]
   
