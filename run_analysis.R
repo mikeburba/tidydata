@@ -23,14 +23,14 @@ run_analysis <- function() {
   # 1. Merges the training and the test sets to create one data set.
   # Start by merging the X data. To simplify processing, I am going to
   # wait to merge the y and subject data
-  X_test  <- read.table("UCI HAR Dataset/test/X_test.txt")
-  X_train <- read.table("UCI HAR Dataset/train/X_train.txt")
+  X_test  <- read.table("X_test.txt")
+  X_train <- read.table("X_train.txt")
   X <- rbind(X_train, X_test)
   
   # 4. Appropriately labels the data set with descriptive variable names. 
   # This is out of order to make processing more simple. I'm using the 
   # features in the data set as my column labels
-  features <- read.table("UCI HAR Dataset/features.txt", stringsAsFactors=F)
+  features <- read.table("features.txt", stringsAsFactors=F)
   features <- dplyr::rename(features, idx=V1, feature=V2)
   names(X) <- features$feature
   
@@ -46,8 +46,8 @@ run_analysis <- function() {
   
   # 3. Uses descriptive activity names to name the activities in the data set 
   # Now I need to load the y (activity data)
-  y_test  <- read.table("UCI HAR Dataset/test/y_test.txt")
-  y_train <- read.table("UCI HAR Dataset/train/y_train.txt")
+  y_test  <- read.table("y_test.txt")
+  y_train <- read.table("y_train.txt")
   y <- rbind(y_train, y_test)
 
   # I'm using the activity labels in the data set as the decriptions for the activity
@@ -59,8 +59,8 @@ run_analysis <- function() {
   # 5. From the data set in step 4, creates a second, independent tidy data set with the 
   # average of each variable for each activity and each subject.  
   # Finally, load the subject data
-  s_test  <- read.table("UCI HAR Dataset/test/subject_test.txt")
-  s_train <- read.table("UCI HAR Dataset/train/subject_train.txt")
+  s_test  <- read.table("subject_test.txt")
+  s_train <- read.table("subject_train.txt")
   s <- rbind(s_train, s_test)
   
   # rename the column to make it more readable
