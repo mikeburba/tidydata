@@ -5,7 +5,7 @@ This repository contains files for submission of the course project for
 
 The following files are in this repository:
 * **[run_analysis.R](./run_analysis.R)** - the single R script in the project.
-* **[features_averages.txt](./features_averages.txt)** - the output of run_analysis.R
+* **[feature_averages.txt](./feature_averages.txt)** - the output of run_analysis.R
 * **[CodeBook.md](./CodeBook.md)** - the CodeBook for this assignment.
 
 
