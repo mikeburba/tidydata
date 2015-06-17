@@ -1,7 +1,7 @@
 # Code Book for *Getting and Cleaning Data*
 
 ## Study Design
-The raw data used for this study are from the Human Activity Recognition Using Smartphones Dataset[1]. The data was downloaded from: [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+The raw data used for this study are from the Human Activity Recognition Using Smartphones Dataset[1]. The data was downloaded from [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and unzipped to [UCI HAR Dataset/](./UCI HAR Dataset/).
 
 The goal of this study is to follow the approach outlined by the course project instructions, i.e.:
 > You should create one R script called run_analysis.R that does the following. 
@@ -20,7 +20,5 @@ We modified the values in the activity dataset (y), by replacing the ids with th
 Of the features, we extracted the ones that relate to mean and standard deviation. The complete list of features that we extracted can be found in [features_mean_sd.txt](./features_mean_sd.txt).
 
 These measurements from the initial dataset were grouped by activity and subject, and then summarized by their mean. So the variable names in the final output represent the mean of each measuremnt, aggreated by activity and subject. 
-
 =========
-
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
